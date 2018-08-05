@@ -1,11 +1,11 @@
 # feinstaub2mqtt
 
-Dieses Tool kann man als "Custom API" in einem Feinstaubsensor von [luftdaten.info](luftdaten.info) eintragen um
+Dieses Tool kann man als "Custom API" in einem Feinstaubsensor von [http://luftdaten.info](luftdaten.info) eintragen um
 die Sensorwerte mittels MQTT im Netzwerk zu verteilen. Damit lässt sich ein Feinstaubsensor bspw. einfacher in Home Assistant integrieren als über eine InfluxDB.
 
 
 # Installation
-Entweder mittels `git clone` oder `go get` den Sourcecode runterladen und selber kompilieren, oder unter [Releases](github.com/f-breidenstein/feinstaub2mqtt/releases) eine fertige Binary runterladen.
+Entweder mittels `git clone` oder `go get` den Sourcecode runterladen und selber kompilieren, oder unter [Releases](https://github.com/f-breidenstein/feinstaub2mqtt/releases) eine fertige Binary runterladen.
 
 # MQTT Topics
 Für jeden Sensorwert im übertragenen JSON, wird ein eigener MQTT Topic angelegt. Das format ist
