@@ -4,10 +4,10 @@ Dieses Tool kann man als "Custom API" in einem Feinstaubsensor von [http://luftd
 die Sensorwerte mittels MQTT im Netzwerk zu verteilen. Damit lässt sich ein Feinstaubsensor bspw. einfacher in Home Assistant integrieren als über eine InfluxDB.
 
 
-# Installation
+## Installation
 Entweder mittels `git clone` oder `go get` den Sourcecode runterladen und selber kompilieren, oder unter [Releases](https://github.com/f-breidenstein/feinstaub2mqtt/releases) eine fertige Binary runterladen.
 
-# MQTT Topics
+## MQTT Topics
 Für jeden Sensorwert im übertragenen JSON, wird ein eigener MQTT Topic angelegt. Das format ist
 ```
 PREFIX/<6stellige ID des verbauten ESP8266>/<Name des jeweiligen Sensors>
@@ -25,7 +25,7 @@ ibg10/feinstaub/911386/max_micro 28265
 ibg10/feinstaub/911386/signal -56
 ```
 
-# Anwendung
+## Anwendung
 Am einfachsten mit Hilfe eines SystemD Services auf einem kleinen Server laufen lassen. Hier ein beispielhaftes Service-File:
 ```
 [Unit]
